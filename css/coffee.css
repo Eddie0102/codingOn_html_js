@@ -1,0 +1,27 @@
+h2{
+    color:black;
+    background-color: lightgrey;
+    font-weight: bold;
+    font-size: 30px;
+}
+#p1{
+    /* color: blue; */
+    color: rgb(255,0,0);
+    font-family: 휴먼매직체;
+    font-size: 25px;
+    text-align: justify; 
+    background-color: lightgoldenrodyellow;   
+}
+#p2{
+    font-size: 20px;
+    text-align: justify;
+    font-family: 휴먼매직체;
+}
+.coffee{
+    color: rgb(184, 74, 74);
+    background-color: beige;
+    font-weight: bold;
+    /* bold: weight=700 */
+    font-family: 휴먼매직체;
+    font-size: 25px;
+}

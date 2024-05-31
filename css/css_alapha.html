@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>색상 투명도 적용</title>
+    <style>body{
+        background-color: rgb(0,0,150);
+        color: rgb(255,255,255);
+    }
+    /* rgba(0,0,0,alpha)- alpha가 1 이면 불투명, 0이면 투명 */
+    #logo1{color: rgba(255,255,255,1.0);
+    text-decoration: underline;}
+    #logo2{color: rgba(255,255,255,0.7);
+    text-decoration: underline;}
+    #logo3{color: rgba(255,255,255,0.4);
+    text-decoration: underline;}
+    #logo4{color: rgba(255,255,255,0.2);
+    text-decoration: underline;}
+    /* select 사용해서 투명도 (선명, 조금 투명, 많이 투명, 완전 투명 투명도 선택하는 코드 짜보기) */
+
+    </style>
+</head>
+<body>
+    <h1 id="logo1">codingOn</h1>
+    <h1 id="logo2">codingOn</h1>
+    <h1 id="logo3">codingOn</h1>
+    <h1 id="logo4">codingOn</h1>
+</body>
+</html>

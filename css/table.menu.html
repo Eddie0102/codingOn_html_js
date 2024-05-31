@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 메뉴</title>
+    <style>
+        table{
+            border: 1px solid navy;
+            border-collapse: collapse;
+        }
+        h2{
+            font-family: 휴먼매직체;
+            font-size: 30px;
+            font-weight: 500;
+        }
+        /* 쉼표(,) : 그룹 선택자*/
+        td,th{
+            border: 1px solid navy;
+            text-align: center;
+            width: 100px;
+            font-family: 휴먼매직체;
+            font-weight: 100;
+        }
+        #p1{
+            font-size: 16px;
+            font-family: 궁서체;
+            font-weight: 700;
+            color: red;
+
+        }
+        #p2{
+            font-size: 16px;
+            font-family: 궁서체;
+            font-weight: 700;
+            color: blue;
+        }
+        thead{
+            background-color: #eeeeee;
+        }
+    </style>
+</head>
+<body>
+    <h2>주류 메뉴판</h2>
+    <table >
+        <colgroup>
+            <col style="background-color: beige;" >
+            <col style="background-color: rgb(183, 211, 222);">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>주류</th>
+                <th>메뉴</th>
+            </tr>
+        <t/head>
+        <tbody>
+            <tr>
+                <td rowspan="3" width="100">양주🍾</td>
+                <td >글렌피딕</td>
+            </tr>
+            <tr>
+                <td>잭다니엘</td>
+            </tr>
+            <tr>
+                <td>몽키숄더</td>
+            </tr>
+            <tr>
+                <td rowspan="3">맥주🍺</td>
+                <td>카스</td>
+            </tr>
+            <tr>
+                <td>테라</td>
+            </tr>
+            <tr>
+                <td>크러시</td>
+            </tr>
+            <tr>
+                <td rowspan="3">소주🍶</td>
+                <td>참이슬</td>
+            </tr>
+            <tr>
+                <td>좋은데이</td>
+            </tr>
+            <tr>
+                <td>진로</td>
+            </tr>
+        </tbody>
+    </table>
+    <p id="p1">※경고: 지나친 음주는 건강에 해롭습니다※</p>
+    <p id="p2">⭐그러나 적당한 음주는 언제나 환영입니다⭐</p>
+</body>
+</html>

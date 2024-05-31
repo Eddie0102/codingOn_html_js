@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 메뉴</title>
+    <style>
+        table{
+            border: 1px solid navy;
+            border-collapse: collapse;
+        }
+        h2{
+            font-family: 한컴돋움;
+            font-size: 30px;
+            font-weight: 500;
+            font
+        }
+        /* 쉼표(,) : 그룹 선택자*/
+        th{
+            border: 1px solid navy;
+            text-align: center;
+            width: 100px;
+            font-family: 휴먼매직체;
+            font-weight: 100;
+            font-size: 20px;
+        }
+        td{
+            border: 1px solid navy;
+            text-align: center;
+            width: 100px;
+            font-family: 휴먼매직체;
+            font-weight: 100;
+            font-size: 18px;
+        }
+        #p1{
+            font-size: 16px;
+            font-family: 궁서체;
+            font-weight: 700;
+            color: black;
+
+        }
+        #p2{
+            font-size: 16px;
+            font-family: 궁서체;
+            font-weight: 700;
+            color: blue;
+        }
+        thead{
+            background-color: #eeeeee;
+        }
+    </style>
+</head>
+<body>
+    <h2>WEERO COFFEE</h2>
+    <table >
+        <colgroup>
+            <col style="background-color: beige;" >
+            <col style="background-color: rgb(183, 211, 222);">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>음료</th>
+                <th>가격</th>
+                <th>이미지</th>
+            </tr>
+        <t/head>
+        <tbody>
+            <tr>
+                <td rowspan="2" width="100">커피류</td>
+                <td>아메리카노</td>
+                <td>4,200원</td>
+                <td><img src="image/coffee.jpg" alt="아메리카노"></td>
+            </tr>
+            <tr>
+                <td>돌체라떼</td>
+                <td>4,800원</td>
+                <td><img src="image/latte.jpg" alt="돌체라떼"></td>
+            </tr>
+            <tr>
+                <td rowspan="2">주스류</td>
+                <td>딸기주스</td>
+                <td rowspan="2">5,000원</td>
+                <td><img src="image/berry.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td>키위주스</td>
+                <td><img src="image/mango.gif" alt=""></td>
+
+            </tr>
+        </tbody>
+    </table>
+    <p id="p1">⭐커피 메뉴 주문 시 원두를 선택해 주세요⭐</p>
+    <p id="p2">⭐음료 1잔당 쿠폰 1개가 적립됩니다⭐</p>
+    <p id="p2">⭐쿠폰 10개를 모으시면 아메리카노 1잔 무료⭐</p>
+</body>
+</html>
