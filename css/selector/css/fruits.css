@@ -1,0 +1,19 @@
+*{
+    color: blue;
+    background-color: rgb(232, 212, 215);
+}
+/* 전체선택자 */
+ul li{
+    color: red;
+}
+div{
+    color: rgb(168, 168, 9);
+}
+#tomato{
+    color: red;
+}
+/* id선택자 */
+.orange{
+    color: orange;
+}
+/* class 선택자 */
