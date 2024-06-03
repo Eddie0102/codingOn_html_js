@@ -1,0 +1,26 @@
+div{
+    width: 400px;
+    height: 400px;
+    border: 1px solid #000000;
+    background: url("../images/watermelon.jpg") no-repeat;
+    /* 파일 위치찾기 - 상위폴더: .(점)2개 */
+}
+/* 원본이 사각형 크기로 잘려서 보임 */
+#bg1{
+    background-size: auto;
+}
+/* 크기가 축소되어 보임 300px (크기 고정) */
+#bg2{
+    background-size: 300px;
+}
+/* 가변 크기 */
+#bg3{
+    background-size: 80%;
+    background-position: bottom right;
+}
+#bg4{
+    background-size: contain;
+}
+#bg5{
+    background-size: cover;
+}
