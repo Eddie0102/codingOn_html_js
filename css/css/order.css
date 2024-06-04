@@ -1,0 +1,18 @@
+fieldset{
+    border: 5px solid yellowgreen;
+    border-radius: 30px;
+    background-color: beige;
+}
+legend{
+    text-align: center;
+}
+form{
+    width: 500px;
+}
+form ul li{
+    margin: 16px 20px;
+}
+ul li{
+    list-style: none;
+
+}

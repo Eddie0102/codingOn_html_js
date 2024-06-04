@@ -1,0 +1,34 @@
+/* *{
+    padding: 0; margin: 0;
+} */
+#container{
+    margin-top: 30px;
+    width: 1000px;
+    height: 800px;
+    margin: 50px auto 50px auto;
+    /* ----top--right-bottom-left*/
+
+}
+fieldset{
+    border: 5px solid;
+    border-radius: 30px;
+    border-color: navy;
+
+}
+legend{
+    margin: 0px ;
+    text-align: center;
+}
+form{
+    width: 500px;
+    margin: 40px auto;
+    
+    
+}
+ul{
+    padding-left: 40px;
+}
+ul li{
+    list-style: none;
+    margin: 16px 10px;
+}

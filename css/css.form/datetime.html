@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날짜 시간</title>
+    <link rel="stylesheet" href="../css/date.css">
+</head>
+<body>
+    <div id="container">
+        <form action="/signup" method="post">
+            <fieldset>
+                <legend>회원가입</legend>
+                    <ul>
+                        <li>
+                            <label for="birthday">생일</label>
+                            <input type="date" id="birthday" name="birthday" required>
+                        </li>
+                        <!-- 날짜 -->
+                        <li>
+                            <label for="meeting">회의 시간</label>
+                            <input type="time" id="meeting" name="meeting">
+                        </li>
+                        <!-- 시간 -->
+                        <li>
+                            <label for="theDay">예약일</label>
+                            <input type="datetime-local" id="theDay" name="theDay">
+                        </li>
+                        <!-- 날짜와 시간을 한번에 -->
+                        <li>
+                            <button type="submit">가입하기</button>
+                        </li>
+                    </ul>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

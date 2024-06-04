@@ -1,0 +1,49 @@
+#container{
+    width: 800px;
+    
+}
+form{
+    width: 500px;
+    height: 200px;
+
+    margin: 0 auto;
+    border: 1px solid;
+    border-radius: 10px;
+}
+legend{
+    padding-left: 20px;
+    text-align: center;
+}
+ul li{
+    list-style: none;
+    margin: 16px;
+}
+ul li label{
+    width: 100px;
+    float: left;
+}
+ul li input{
+    width: 140px; height: 20px;
+}
+select{
+    width: 150px; height: 25px;
+}
+
+form{
+    width: 500px;
+    border: 5px solid navy;
+    border-radius: 10px;
+}
+fieldset{
+    border: 0px solid;
+    border-radius: 1px;
+    margin: 0 auto;
+}
+#click{
+    margin: 10px auto;
+    text-align: center;
+}
+button{
+    padding: 5px 10px;
+    cursor: pointer;
+}
