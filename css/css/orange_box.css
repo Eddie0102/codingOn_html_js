@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0;
+}
+div{
+    width: auto;
+    height: 200px;
+    background-color: orange;
+    font-weight: bold;
+    
+}
+#box1{
+    width: 200px;
+    height: 100px;
+    background-color: skyblue;
+    float: left;
+    margin-right: 30px;
+}
+#box2{
+    width: 200px;
+    height: 100px;
+    background-color: green;
+    float: left;
+    margin-right: 30px;
+}
+#box3{
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    float: left;
+}
