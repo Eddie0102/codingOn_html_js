@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 선택자: (::)</title>
+    <style>
+        *{
+            font-family: 고딕;
+            font-size: 30px;
+        }
+        
+        ul li{
+            margin: 12px;
+            list-style: square;
+        }
+        ul .new::after{
+            /* 글자 뒤에 붙으면 after */
+            /* 글자 앞에 붙으면 before */
+            content: "NEW";
+            background-color: navy;
+            color: white;
+            font-size: 0.8em;
+            border-radius: 5px;
+            margin: 0 5px;
+            padding: 3px;
+    
+        }
+        ul .sale::after{
+            content: "-50% SALE";
+            background-color: skyblue;
+            font-size: 0.8em;
+            border-radius: 5px;
+            margin: 0 5px;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h2>상품 목록</h2>
+    <ul>
+        <li class="new">라면</li>
+        <li class="sale">콩나물</li>
+        <li>두부</li>
+        <li>커피</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,35 @@
+@charset "UTF-8";
+*(
+
+)
+#container{
+    width: 1200px;
+    margin: 0  auto;
+}
+.contents{
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.contents :first-child{
+    color: red;
+    border-radius: 20px;
+}
+.contents :nth-child(2){
+    border-radius: 20px;
+    background-color: pink;
+    padding: 10px;
+}
+.contents :nth-child(3){
+    border-radius: 20px;
+    background-color: skyblue;
+    padding: 10px;
+}
+.contents :last-child{
+    border-radius: 20px;
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+}
