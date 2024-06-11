@@ -19,15 +19,21 @@
             /* transition 시간: 1s(1 second - 1초*/
             /* transition-duration: 1s, 2s, 3s; */
             /* transition: all 2s ; */
-            transition: width, height, transform, 1s, 2s, 3s;
+            /* transition: width, 1s, height, 2s, transform, 3s; */
             /* border와 달리 변화 할 transition 속성들과 시간을 나열할 때,(콤마)로 구분해야 함
                 단, all 일때는 아님 */
+                transition: all 2s;
         }
         .tr1:hover{
             width: 200px;
             height: 120px;
             transform: rotate(180deg);
         }
+        /* .tr1:active{
+            width: 200px;
+            height: 120px;
+            transform: rotate(180deg);
+        } */
     </style>
 </head>
 <body>

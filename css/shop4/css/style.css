@@ -1,0 +1,308 @@
+@charset "utf-8";
+/* 공통 스타일 */
+*{
+    margin: 0; padding: 0;
+    font-family: "Noto Sans KR";
+}
+#container{
+    width: 100%;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #f1f1f1;
+}
+/* 모바일 기준 */
+
+/* header 스타일 */
+header .navbar .navbar_logo{
+    font-size: 24px;
+    padding-left: 20px;
+}
+header .navbar .navbar_logo a:hover{
+    color: skyblue;
+}
+
+header .navbar{
+    display: flex;
+    flex-direction: column;
+    background-color: navy;
+}
+header .navbar_menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+header .navbar_menu li{
+    text-align: center;
+    padding: 10px;
+}
+header .navbar_menu li:hover{
+    background-color: skyblue;
+    border-radius: 3px;
+}
+header .navbar .navbar_toggle{
+    position: absolute;
+    right: 30px;
+    font-size: 1.5em;
+    line-height: 53px;
+}
+#container main{
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* 가변 크기는 %를 사용함, 부모의 크기에 대한 상대 비율 */
+footer {
+    margin-top: 100px;
+    width: 100%;
+    height: 50px;
+    border-top: 2px solid black;
+    position: relative;
+    bottom: 0;
+}
+footer #footer_menu{
+    margin: 10px 20px;
+}
+footer #footer_menu li {
+    display: inline-block;
+    text-decoration: none;
+    border-right: 2px solid beige;
+    padding: 0px 10px;
+}
+footer #footer_menu li a{
+    text-decoration: none;
+    color: black;
+}
+footer #footer_menu li:last-child{
+    border:none;
+}
+/* index */
+main #contents h1{
+    margin: 10px auto;
+    text-align: center;
+    font-size: 20px
+}
+main #contents .main_pic{
+    width: 300px;
+    margin: 20px auto;
+}
+main #contents .main_pic img{
+    width: 300px;
+    height: 200px;
+    border-radius: 4px;
+}
+/* product */
+main{
+    margin: 0 auto;
+}
+main #contents{
+    width: 70%;
+    margin: 0 auto;
+}
+main #contents #explain_title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#contents #watermelon, #strawberry{
+    margin: 0 auto;
+    width: 100%;
+}
+#contents #watermelon img, #strawberry img{
+    margin: 20px auto;
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+}
+#contents #watermelon h3, #strawberry h3{
+    margin: 10px auto;
+    text-align: left;
+    color: red;
+}
+#contents #watermelon p, #strawberry p{
+    margin: 10px auto ;
+    font-size: 12px;
+    line-height: 2;
+    text-align: justify;
+}
+/* board */
+#container main #contents{
+    width: 90%;
+    margin: 0 auto;
+}
+#container main #contents h2{
+    margin: 0 auto;
+    text-align: center;
+}
+#container main #contents table{
+    width: 100%;
+    border: 2px solid #ccc;
+    text-align: center;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+#container main #contents table th, td{
+    border: 2px solid #ccc;
+    padding: 3px 5px;
+}
+#contents table thead{
+    background-color: beige;
+}
+#contents table tbody tr td:nth-of-type(2){
+    text-align: left;
+}
+#container main #contents table tr th, td{
+    border: 2px solid #ccc;
+    padding: 3px 5px;
+}
+/* login */
+#contents main{
+    width: 80%;
+}
+#contents h2{
+    text-align: center;
+ }
+ #contents form{
+     width: 80%;
+     margin: 30px auto;
+     border: 1px solid #ccc;
+ }
+ #contents form ul li{
+     margin: 20px;  
+ }
+ #contents form ul{
+     padding: 50px 10px;
+ }
+ #contents form ul li label{
+     width: 80px;
+     display: flex;
+     flex-direction: row;
+ }
+ #contents form ul #button{
+    float: right;
+    margin: 7px auto;
+ }
+
+
+
+@media screen and (min-width: 768px) {
+    header .navbar{
+        display: flex;
+        flex-direction: row;
+    }
+    header .navbar_menu{
+        /* width: 100%; */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 150px;
+    }
+    header .navbar_menu li{
+        padding: 16px 24px;
+        margin-left: 20px;
+    }
+    header .navbar .navbar_logo{
+        line-height: 53px;
+    }
+    header .navbar .navbar_toggle{
+        display: none;
+    }
+    /* PC - index 스타일 */
+    #container main{
+        width: 1000px;
+    }
+    #container main #contents{
+        width: 900px;
+    }
+    main #contents h2{
+        margin-top: 20px;
+    }
+    main #contents .main_pic{
+        width: 550px;
+        margin: 20px auto;
+    }
+    main #contents .main_pic img{
+        width: 550px;
+        height: 360px;
+        border-radius: 4px;
+    }
+    footer{
+        margin: 10px 40px;
+    }
+    /* PC - product 스타일 */
+    main #contents #product_h1{
+        text-align: center;
+    }
+    #contents #watermelon, #strawberry{
+        height: 350px;
+    }
+    #contents #watermelon img, #strawberry img{
+        float: left;
+        line-height: 2;
+        width: 300px;
+        height: 250px;
+        margin: 20px 16px;
+        border-radius: 30px;
+    }
+    #contents #watermelon h3, #strawberry h3{
+        text-align: left;
+        color: red;
+    }
+    #contents #watermelon p, #strawberry p{
+        margin-top: 20px;
+        font-size: 12px;
+        line-height: 2;
+    }
+    #contents #watermelon, #strawberry{
+        margin: 0 auto;
+        width: 90%;
+    }
+    /* PC - board 스타일 */
+    #container main #contents h2{
+        margin: 30px auto;
+        text-align: center;
+    }
+    #container main #contents table th, td{
+        border: 2px solid #ccc;
+        padding: 3px 3px;
+    }
+    #container main #contents{
+    width: 90%;
+    margin: 0 auto;
+    }
+    #container main #contents table{
+    width: 70%;
+    border: 2px solid #ccc;
+    text-align: center;
+    border-collapse: collapse;
+    margin: 30px auto 100px;
+    }
+    /* PC - login */
+    #contents main{
+        width: 80%;
+    }
+    #contents h2{
+        text-align: center;
+     }
+     #contents form{
+         width: 40%;
+         margin: 30px auto 300px;
+         border: 1px solid #ccc;
+     }
+     #contents form ul li{
+         margin: 20px;  
+     }
+     #contents form ul{
+         padding: 50px 10px;
+     }
+     #contents form ul li label{
+         width: 80px;
+         float: left;
+     }
+     #contents form ul #button{
+        float: right;
+        margin: 7px auto;
+     }
+}

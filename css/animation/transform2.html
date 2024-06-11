@@ -13,7 +13,7 @@
             /* rotate(각도) degree단위 사용 */
         }
         div.b:hover{
-            transform: rotate(45deg);
+            transform: rotate(20deg);
         }
         div.c{
             width: 150px;
@@ -33,6 +33,17 @@
         div.d:hover{
             transform: scale(1.5);
         }
+        div.e{
+            width: 150px;
+            height: 80px;
+            background-color: greenyellow;
+        
+        }
+        div.e:hover{
+            /* skew(x축 각도,y축 각도) */
+            transform: skew(20deg,30deg);
+        }
+    
     </style>
 </head>
 <body>
@@ -47,6 +58,7 @@
     <h2>transform: scale(1.5)</h2>
     <div class="d">Hello world!</div>
     <!-- scale(크기), 배수(1.5, 2) 사용 -->
-
+    <h2>transform: skew(20deg,30deg)</h2>
+    <div class="e">Hello world!</div>
 </body>
 </html>

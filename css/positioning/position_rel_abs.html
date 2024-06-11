@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>position 속성 예제</title>
     <style>
+        body{
+            height: 2000px;
+        }
         /* *{
             box-sizing: border-box;
         } */
@@ -15,6 +18,7 @@
             margin: 100px 50px;
             position: relative;
             padding: 2px;
+            /* box들의 기준 */
             
         }
         /* wrap div처럼 한칸 띄우면 하위 개념 */
@@ -41,14 +45,16 @@
             right: 0px;
         }
         #box4{
-            position:absolute;
-            bottom: 0px;
-            right: 0px;
+            /* position:absolute; */
+            position: fixed;
+            /* fixed: 브라우저 창 기준 */
+            top: 20px;
+            right: 30px;
         }
         #box5{
             position:absolute;
             bottom: 0px;
-            left: 0px;
+            right: 0px;
         }
     </style>
 </head>
@@ -57,7 +63,8 @@
         <div id="box1"></div>
         <div id="box2"></div>
         <div id="box3"></div>
-        <div id="box4"></div>
+        <div id="box4" style="background-color: red;"></div>
+        <!-- style우선순위: inline스타일>>내부스타일>>외부스타일 -->
         <div id="box5"></div>
     </div>
 </body>

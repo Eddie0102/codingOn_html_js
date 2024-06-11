@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+#content{
+    width: 1000px;
+    margin: 30px auto; 
+    /* box-sizing: border-box;   */
+}
+#content h1{
+    text-align: center;
+}
+#content .product_list{
+    list-style: none;
+    padding-left: 0px;
+}
+#content .product_list li{
+    float: left;
+    /* display: inline-block; */
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+#content .product_list li img{
+    float: left;
+}
+#content .product_list .detail{
+    width: 300px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 200px;
+    transition: all 0.7s;
+}
+/* ------애니매이션 css */
+#content .product_list li:hover .detail{
+    transform: translateY(-200px);
+}
+#content .product_list .detail{
+    color: #f2f2f2;
+    text-align: center;
+}
+/* li(부모)-> position: relative, overflow: hidden */
+/* li > .detail(자식) -> position: absolute */
+
+/* li: hover -> transition: translateY(-200px) */
+/* 이미지를 덮는  text 박스의 크기도 이미지 픽셀(300x200)과 동일하게 맞춰줘야함 */
+span{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+#gyull{
+    color: orange;
+    
+}
+#peaches{
+    color: hotpink;
+}
+#berry{
+    color: violet;
+}
+
+

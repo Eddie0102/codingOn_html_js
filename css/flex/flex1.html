@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 예제</title>
+    <style>
+        #wrap{
+            width: 300px;
+            height: 300px;
+            display: flex;
+            /* flex-direction: column; */
+            /* flex-direction: row; */
+            /* flex-direction의 default는 row(가로)*/
+            flex-direction: row-reverse;
+            border: 2px solid #333;
+        }
+        #wrap div{
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>flex-direction 속성</h1>
+    <div id="wrap">
+       <div style="background-color: coral;">A</div>
+       <div style="background-color: lightblue;">B</div>
+       <div style="background-color: khaki;">C</div>
+       <div style="background-color: pink;">D</div>
+    </div>
+</body>
+</html>

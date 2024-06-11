@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: "SCDream1";
+}
+/* 전체 선택자로 초기화 하면 왼쪽 상단 기준으로 시작해서
+margin도 padding도 없어서 딱 달라붙게 된다 */
+ul li{
+    list-style: none;
+}
+#container{
+    position: relative;
+    width: 100%px;
+    height: 1000px;
+    margin: 0 auto;
+}
+header{
+    /* width: 100%;생략 */
+    /* text-decoration: none; */
+    background-color: black;
+    height: 70px;
+}
+header #logo{
+    width: 20%;
+    float: left;
+    line-height: 70px;
+    padding-left: 30px;
+}
+header #logo h1{
+    font-size: 32px;
+}
+header #logo h1 a{
+    color: #f1f1f1;
+    text-decoration: none;
+}
+header #logo h1 a #logo_is{
+    font-size: 0.8em;
+    color: #f1f1f1;
+}
+header #logo h1 a #logo_T{
+    color: #f1f1f1;
+    font-style: italic;
+}
+/* nav태그 */
+header nav{
+    width: 70%;
+    height: 70px;
+    float: right;
+}
+header nav ul li{
+    /* float: left; */
+    display: inline-block;
+}
+header nav ul li a{
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #f1f1f1;
+    margin: 0 30px;
+    padding: 10px;
+}
+header nav ul li a:hover{
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+#container #ad{
+    width: 100%;
+    height: 160px;
+    border: 1px solid black;
+    position: relative;
+    top: 0;
+}
+#container #ad ul li{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+}
+#container #ad ul li a .slide{
+    transition-timing-function:ease-in-out;
+    transition: all 3s;
+    transform: translateX(-250px);
+}
+/* main 영역 css */
+#main #contents{
+    float: left;
+}
+#main #side_bar{
+    width: 50px;
+    position: relative;
+    left: 30px;
+}
+#main #side_bar ul li a{
+    text-decoration: none;
+    line-height: 100px;
+    font-size: 20px;
+    font-weight: 700;
+}
+#main #side_bar ul li a:hover{
+    text-decoration: underline;
+}
+#main section #contents #main_pic{
+    margin: 0 ;
+    padding: 0;
+    /* float: left; */
+    position: absolute;
+    left: 22.3%;
+    display: inline-block;
+}
+/* footer 스타일 */
+footer #footerbox{
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+}
+footer #footerbox #footer_menu li{
+    font-size: 0.8em;
+    float: right;
+    padding-right: 30px;
+    line-height: 80px;
+}
+
+/* board 스타일 */
+#main section #border_title{
+    margin: 20px auto ;
+    font-size: 50px;
+    text-align: center;
+    
+}
+#main section table{
+    border: 2px solid black;
+    width: 60%;
+    margin: 50px auto;
+    text-align: center;
+}
+#main section table tbody tr td {
+    padding: 5px;
+}
+#main section table tbody tr td:nth-of-type(2){
+    text-align: left;
+
+}
+/* login 스타일 */
+#contents{
+    width: 100%;
+    margin: 0 auto;
+}
+#contents h1{
+    text-align: center;
+}
+#contents form{
+    width: 500px;
+    margin: 30px auto;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+#contents form ul{
+    margin: 30px auto;
+    
+}
+#contents form ul li{
+    margin: 10px 20px
+}
