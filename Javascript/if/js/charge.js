@@ -44,6 +44,12 @@ else if((age >= 17) && (age <= 19)){
                     + "당신의 입장료는 <span>" + charge + "원</span>입니다."
     )
 }
+else if(age>30){
+    charge = 3000;
+    document.write("<h3>당신은 너무 늙었습니다.</h3><br>" 
+                    + "탑승할 수 없습니다.")
+    
+}
 else {
     charge = 3000;
     document.write("<h3>당신은 일반인입니다.</h3><br>" 
