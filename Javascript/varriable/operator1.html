@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>산출연산</title>
+</head>
+<body>
+    <script>
+        // 산술 연산
+        console.log(3 + 4);
+        console.log(3 - 4);
+        console.log(3 * 4);
+        console.log(3 / 4);
+        console.log(3 % 4);
+
+        // 숫자 변수 2개를 할당하여 산출 연산하기
+        let n1 = 10;
+        let n2 = 4;
+
+        console.log(n1 + n2);
+        console.log(n1 - n2);
+        console.log(n1 * n2);
+        console.log(n1 / n2);
+        console.log(n1 % n2);
+
+        // 성적의 합계와 평균 계산
+        // 변수 이름 - 의미있게, 카멜(낙타) 표기법
+        let engScore = 80;
+        let mathScore = 75;
+        let totalScore = engScore + mathScore;
+        // console.log(engScore + mathScore);
+        console.log(totalScore);
+        console.log((engScore + mathScore) / 2);
+        document.write("합계: " + totalScore);
+        document.write("<br>");
+        document.write("평균: " + totalScore /2);
+
+        //청바지 구매
+        let jean = 0;
+        // jean = jean + 1;
+        // ++ : 1 증가할 떄 사용하는 기호
+        // -- : 1 감소할 떄 사용하는 기호
+        jean++; //(후 증가)
+        ++jean; //(선 증가)
+        jean--; //(후 감소)
+        --jean; //(선 감소)
+        
+        console.log(jean);
+
+        document.write("<br>----------------------------<br>");
+    
+
+        let num1 = 10;
+        let result1;
+        result1 = num1++; //result1 = num1 으로 변수 선언만 처리 됨
+        result1 = num1++; //이미 result1 = num1 으로 변수 대입이 끝났으므로 num1 =num1++ 과 같은 코드로 처리되어 1증가
+        
+        document.write(result1);
+    </script>
+</body>
+</html>

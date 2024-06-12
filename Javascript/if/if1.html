@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if문 예제</title>
+</head>
+<body>
+    <script>
+        /* 비교문이 true이면 참을 실행, false이면 거짓을 실행
+        if(조건식)){
+        실행(참)
+        }
+        else{
+        실행(거짓)
+        }
+        1. 단독 if문*/
+        /*let limitedSpeed = 65;
+        if(limitedSpeed >= 50){
+            document.write("<h2>안전 속도 위반!! <br> 과태료 10만원 부과<br></h2>");
+        }*/
+        /*let limitedSpeed = 45;
+        if(limitedSpeed >= 50){
+            document.write("<h2>안전 속도 위반!! <br> 과태료 10만원 부과<br></h2>");
+        }
+        else {
+            document.write("<h2>안전 속도 준수!!<br> 고맙습니다.<br></h2>");
+        }
+        document.write("현재 속도는 시속 " + limitedSpeed + " km 입니다.");*/
+        
+        // 자격증 점수가 60 이상이면 합격 아니면 불합격
+        /*let score = 50;
+
+        if(score >= 60){
+            document.write("<h2>★합격입니다★<br>!!축하드립니다!!</h2>");
+        }
+        else {
+            document.write("<h2>※불합격입니다※<br>!!분발하세요!!!<br></h2>");
+        }
+        document.write("당신의 점수는 " + score + "점 입니다.");*/
+
+        // 짝수, 홀수 판별 프로그램
+        let num = prompt("숫자를 입력하세요", "1");
+        num = Number(num)
+
+
+        if((num % 2 == 0) && (num > 0)){
+            document.write("입력한 숫자 " + num + "은 짝수입니다.");
+        }
+        else if(num % 2 !== 0){
+            document.write("입력한 숫자 " + num + "은 홀수입니다.");
+        }
+        else if(num === 0){
+            document.write("입력한 숫자 " + num + "은 그냥 0 입니다.");
+        }
+
+
+
+
+    </script>
+</body>
+</html>

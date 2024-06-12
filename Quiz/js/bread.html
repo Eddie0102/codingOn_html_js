@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>산술연산 실습 예제</title>
+</head>
+<body>
+    <script>
+        let totalBread = 20, people = 3;
+
+        // 자료형(type)의 크기 - 객체 > 문자 > 실수 > 정수
+        // 형변환 -  자동 형 변환(작은 자료형>>큰 자료형),강제 형 변환
+        // 강제 형 변환(큰자료형 >> 작은 자료형)
+        let unit = (totalBread / people);
+        let rest = (totalBread % people);
+
+        console.log(typeof(unit));
+        console.log(typeof(unit));
+        unit = parseInt(unit)
+
+        document.write("각자 빵의 개수: " + unit + "<br>");
+        document.write("남은 빵의 개수: " + rest );
+
+
+    </script>
+</body>
+</html>

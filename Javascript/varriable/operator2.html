@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비교, 논리 연산자</title>
+</head>
+<body>
+    <script>
+        // let num1 = 8
+        // let num2 = 5
+        // let num1 = 8, num2 = 5;
+
+        // 비교 연산: >, <, ==, !=, >=, <=
+        // 결과값: true, false
+        // console.log(num1 > num2);
+        // console.log(num1 < num2);
+        // console.log(num1 == num2);
+        // console.log(num1 === num2);
+        // console.log(num1 !== num2);
+        // console.log(num1 >= num2);
+        // console.log(num1 <= num2);
+
+        // 논리 연산자: 비교 연산 2개 이상
+        // 논리 곱 (그리고) - &&
+        // 논리 합 (또는) - ||
+        // 논리 부정 - !
+        // console.log((num1 > num2) && (num1 === num2)); //false
+        // // 두 조건이 모두 참 일 때만 참(true)
+        // console.log((num1 > num2) || (num1 === num2)); //true
+        // // 두 조건 중 하나만 참이어도 참(true)
+        // console.log(!(num1 === num2)); 
+
+
+        // 조건 연산자 - (비교문) ? 참(true) : 거짓(false)
+        // let result - 변수선언만 한것;
+        let result = (10 === 11) ? "참입니다" : "거짓입니다";
+        // 변수 선언과 동시에 초기화
+        document.write("결과값: " + result + "<br>");
+
+        // 부모님의 나이 비교
+        let fahterAge =47;
+        let mohterAge =48;
+        
+        let value = (fahterAge > mohterAge) ||(10 < 11) ? true : false;
+        document.write("결과값: ", value)
+    </script>
+</body>
+</html>
