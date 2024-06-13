@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성적 처리 연습</title>
+    <style>
+        #goodScore{
+            color: yellow;
+            background-color: blue;
+        }
+        #midScore{
+            color: yellowgreen;
+            background-color: green;
+        }
+        #badScore{
+            color: #f1f1f1;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let Score =parseInt(prompt("당신의 점수를 입력하세요"));
+
+        let grade;
+        if (Score >= 0 && Score <= 100) {
+            if(Score>=90){
+            grade = "A"
+            document.write("당신의 성적은 ", grade,"입니다.<br>","<span id='goodScore'>축하합니다!</span>" );
+        }
+        else if(Score>=80){
+            grade = "B"
+            document.write("당신의 성적은 ", grade,"입니다.<br>", "<span id='goodScore'>축하합니다!</span>" );
+        }
+        else if(Score>=70){
+            grade = "C"
+            document.write("당신의 성적은 ", grade,"입니다.<br>", "<span id='midScore'>분발하세요!</span>" );
+        }
+        else if(Score>=60){
+            grade = "D"
+            document.write("당신의 성적은 ", grade,"입니다.<br>" ,"<span id='midScore'>분발하세요!</span>" );
+        }
+        else{
+            grade = "F"
+            document.write("당신의 성적은 ", grade,"입니다.<br>" ,"<span id='badScore'>재수강 바랍니다.</span>" );
+        }
+        }
+        else {
+            document.write("올바른 점수가 아닙니다. 다시 입력하세요")
+        }
+    </script>
+</body>
+</html>

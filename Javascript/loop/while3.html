@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문 제어</title>
+</head>
+<body>
+    <script>
+        // 'y' - "계속 반복"
+        // 'n' - "반복 중단"
+        while(true){
+            let key =prompt("Continue?","y/n");
+            if(key === 'y'){
+                alert("Continue");
+            }
+            else if(key === 'n'){
+                alert("Stop");
+                break;
+            }
+            else{
+                alert("Wrong Option.")
+            }
+        }
+        document.write("Stop Program.");
+    </script>
+</body>
+</html>

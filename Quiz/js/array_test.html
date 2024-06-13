@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 실습 예제</title>
+</head>
+<body>
+    <script>
+        let rainbow =["red","orange","yellow","green","blue","navy","black"];
+        console.log(rainbow[2]);
+        rainbow.push("skyblue");
+        /*for(let i=0; i<=rainbow.length; i++){
+            if(rainbow[i]==="black"){
+                console.log("black은 " + i + "번째 인덱스에 있습니다.");
+            }
+        }*/
+        console.log(rainbow.indexOf("black"));
+        
+        let rainbow2 = rainbow.reverse;
+        console.log(rainbow2);
+        rainbow.pop(rainbow2.pop());
+
+
+
+        //문자열 - 1차원 배열
+        // let str = "Hello world, welcome world";
+
+        // indesOf는 앞에서 찾음
+        // lastindexOf는 뒤에서 찾음
+
+        // console.log(str.indexOf("world"))
+        // console.log(str.indexOf("asia"))
+        // console.log(str.lastIndexOf("world"))
+
+    </script>
+</body>
+</html>
