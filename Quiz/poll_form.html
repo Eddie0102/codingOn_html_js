@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>설문조사</title>
 </head>
+
 <body>
     <h2>설문조사</h2>
     <form action="poll.jsp" method="post">
         <p>
             <label for="name">이름</label>
-            <input type="text" name="name"
-            placeholder="이름을 입력하세요" required autofocus>
+            <input type="text" name="name" placeholder="이름을 입력하세요" required autofocus>
         </p>
         <p>
             <label for="email">이메일</label>
-            <input type="email" name="email"
-            placeholder="이메일을 입력하세요" required>
+            <input type="email" name="email" placeholder="이메일을 입력하세요" required>
         </p>
         <h3>나이</h3>
         <div>
-            <label><input type="radio" name="generation" value="10" >10대</label>
-            <label><input type="radio" name="generation" value="20" >20대</label>
-            <label><input type="radio" name="generation" value="30" >30대</label>
-            <label><input type="radio" name="generation" value="40" >40대</label>
-            <label><input type="radio" name="generation" value="50" >50대</label>
-            <label><input type="radio" name="generation" value="over60" >60대 이상</label>
+            <label><input type="radio" name="generation" value="10">10대</label>
+            <label><input type="radio" name="generation" value="20">20대</label>
+            <label><input type="radio" name="generation" value="30">30대</label>
+            <label><input type="radio" name="generation" value="40">40대</label>
+            <label><input type="radio" name="generation" value="50">50대</label>
+            <label><input type="radio" name="generation" value="over60">60대 이상</label>
         </div>
         <br>
         <div>
@@ -38,8 +38,7 @@
         </div>
         <br>
         <div>
-            <textarea name="content" rows="7" cols="80"
-            placeholder="하고 싶은 말을 써주세요:)"></textarea>
+            <textarea name="content" rows="7" cols="80" placeholder="하고 싶은 말을 써주세요:)"></textarea>
         </div>
         <div>
             <input type="submit" value="제출">
@@ -47,4 +46,5 @@
         </div>
     </form>
 </body>
+
 </html>

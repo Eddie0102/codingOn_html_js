@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var str = "Happy day~!";
+
+        //대문자로 >> toUpperCase()
+        //소문자로 >> toLowerCase()
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+
+        //위치 >> indexOf()
+        console.log(str.indexOf('p'));
+        //위치, 뒤에서부터 >>lastindexOf()
+        console.log(str.lastIndexOf());
+
+
+        // 글자 대체 >> replace("old","new")
+        console.log(str.replace('y', 'i'));
+
+        // 글자를 분리 >> 구분 기호(공백문자, ',', ':')
+        // 배열로 바꿔서 일부 데이터만 추출하기
+        console.log(str.split(' '));
+        console.log(str.split(' ')[0]);
+        console.log(str.split(' ')[1]);
+
+        var str2 = "    Happy day~!";
+        // 좌우의 공백을 제거 >> trim() 함수
+        console.log(str2);
+        console.log(str2.trim());
+    </script>
+</body>
+
+</html>
