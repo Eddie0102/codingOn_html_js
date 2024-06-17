@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* body{
+    background-color: beige;
+} */
+body {
+    height: 100vh;
+    /* vh-view height(1500px /100 = 15px) */
+    display: flex;
+    /* 수평정렬 */
+    justify-content:center;
+    align-items: center;
+}
+#container{
+    border: 2px solid navy;
+    border-radius: 16px;
+    padding: 20px;
+}
+#container div{
+    margin: 10px;
+}
+#today{
+    font-size: 1.2em;
+}
+#clock{
+    font-size: 1.2em;
+}

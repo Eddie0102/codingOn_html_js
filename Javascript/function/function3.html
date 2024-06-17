@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>함수의 정의와 호출</h2>
+
+    <script>
+        //1을 더하는 함수
+
+
+
+        /*
+        function addOne(x) {
+            return x + 1;
+        }//1을 더하는 함수를 정의함
+        */
+        /*
+        let addOne = function (x) {
+            return x + 1;
+        }//함수를 익명함수로 정의하는 방법
+        */
+
+        // let addOne = () => {
+        //     return x + 1;
+        // }
+        
+        
+        //화살표 함수로 함수를 정의하는 트렌디한 정의방법
+        // x는 매개변수 =지역변수 이므로 블럭을 빠져나간이후에는 소멸 -> 블럭 밖에서는 정의되지 않음
+
+
+
+        // console.log(addOne(10));//정의한 함수를 호출
+
+
+
+        //전역변수 사용(위치 -  함수나 제어문 위쪽에 위치함)
+        let y = 1;
+        let mulOne = function () {
+            y = y * 2;
+            return y;
+        }
+        console.log(mulOne());
+        console.log(mulOne());
+        console.log(mulOne());
+        console.log(mulOne());
+        console.log(y);
+
+
+    </script>
+</body>
+
+</html>
